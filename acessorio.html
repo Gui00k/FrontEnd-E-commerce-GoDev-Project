@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>GoDev E-commerce</title>
+
+    <link rel="icon" href="" type="image/gif" sizes="16x16" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/45497a702c.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="js/jQuery3.4.1.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
+  </head>
+
+  <body style="background-color: rgba(0, 119, 255, 0.616); color: white">
+    <!-- HEADER -->
+    <div id="1"></div>
+    <script>
+      load("header.html");
+      function load(url) {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(1).innerHTML = req.responseText;
+      }
+    </script>
+    <!-- SLIDER -->
+    <div id="2"></div>
+    <!-- CONTENT SECTION -->
+    <div id="3">IAIDJSAIDSAIJD</div>
+    <script>
+      load("acessoriocontent.html");
+      function load(url) {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(3).innerHTML = req.responseText;
+      }
+    </script>
+
+    <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+      load("footer.html");
+      function load(url) {
+        req = new XMLHttpRequest();
+        req.open("GET", url, false);
+        req.send(null);
+        document.getElementById(4).innerHTML = req.responseText;
+      }
+    </script>
+  </body>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+  <script src="acessoriojs.js"></script>
+</html>
